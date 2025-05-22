@@ -10,14 +10,15 @@ window.onload = function () {
   // this calculates volume of a sphere
 
   const params = new URLSearchParams(document.location.search)
-  const hours = params.get('Radius')
+
   // input
-  const Radius = params.get("Radius")
-  console.log(Radius)
+  const radius = params.get("radius")
+  console.log(radius)
 
   // process
    const volume = (4 / 3) * Math.PI * Math.pow(radius, 3)
-  const dimensions = `<ul><li>Radius = ("radius") mm</li></ul>`
+  const dimensions =  "<ul>\n<li>radius = " +
+  radius
 
   // output
   document.getElementById("dimensions").innerHTML = dimensions
