@@ -10,7 +10,7 @@ window.onload = function () {
   // this calculates volume of a sphere
 
   const params = new URLSearchParams(document.location.search)
-
+  const hours = params.get('Radius')
   // input
   const Radius = params.get("Radius")
   console.log(Radius)
